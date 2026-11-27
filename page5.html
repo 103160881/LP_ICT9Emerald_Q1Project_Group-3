@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+      
+    <style>   
+     body {
+      background-image: url(https://images.squarespace-cdn.com/content/v1/664c7ae50eea9c731b37e817/eb98ffc0-3110-41ac-af77-7139e634afea/OBMC+Intermediate+classroom+3.jpg);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      min-height: 100vh;
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #fcfcfc;
+    }
+
+    
+    
+     .site-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #ffffff;
+      padding: 15px 40px;
+      border-bottom: 8px solid #205068; 
+    }
+
+
+    .nav-menu {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 25px; 
+    }
+
+
+    .nav-menu a {
+      text-decoration: none;
+      color: #333333;
+      font-size: 14px;
+      font-weight: 500;
+      padding-bottom: 4px;
+    }
+
+
+    .nav-menu a.active {
+      border-bottom: 2px solid #205068;
+    }
+
+
+    .portal-btn {
+      display: inline-block;
+      background-color: #205068; 
+      color: #ffffff; 
+      text-decoration: none;
+      font-size: 12px;
+      font-weight: bold;
+      letter-spacing: 0.5px;
+      padding: 14px 28px;
+      border-radius: 50px; 
+      transition: opacity 0.2s ease;
+    }
+
+
+    .portal-btn:hover {
+      opacity: 0.9;
+    }
+
+ .portal-btn {
+      display: inline-block;
+      background-color: #205068; 
+      color: #ffffff; 
+      text-decoration: none;
+      font-size: 12px;
+      font-weight: bold;
+      letter-spacing: 0.5px;
+      padding: 14px 28px;
+      border-radius: 50px; 
+      transition: opacity 0.2s ease;
+    }
+
+
+    .portal-btn:hover {
+      opacity: 0.9;
+    }
+
+    .nav-menu a:hover { 
+      color: #205068; 
+    }
+    
+  .nav-menu a {
+  position: relative;
+  text-decoration: none;
+  color: #333333;
+  padding-bottom: 6px;
+}
+.nav-menu a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%; 
+  height: 2px;
+  background-color: #164e63; 
+  transition: width 0.3s ease; 
+}
+
+.nav-menu a:hover::after,
+.nav-menu a.active::after {
+  width: 100%;
+}
+ @media (max-width: 768px) {
+            .site-header {
+                flex-wrap: wrap;
+                gap: 15px;
+                padding: 15px 20px;
+            }
+
+            .nav-menu {
+                order: 3;
+                width: 100%;
+                flex-wrap: wrap;
+                gap: 12px 18px;
+            }
+        }
+body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: 'Arial', sans-serif;
+      background-color: #ffffff;
+    }
+
+
+    .site-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #ffffff;
+      padding: 15px 40px;
+      border-bottom: 8px solid #205068; 
+    }
+
+
+    .nav-menu {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 25px; 
+    }
+
+
+    .nav-menu a {
+      text-decoration: none;
+      color: #333333;
+      font-size: 14px;
+      font-weight: 500;
+      padding-bottom: 4px;
+    }
+
+
+    .nav-menu a.active {
+      border-bottom: 2px solid #205068;
+    }
+
+
+    .portal-btn {
+      display: inline-block;
+      background-color: #205068; 
+      color: #ffffff; 
+      text-decoration: none;
+      font-size: 12px;
+      font-weight: bold;
+      letter-spacing: 0.5px;
+      padding: 14px 28px;
+      border-radius: 50px; 
+      transition: opacity 0.2s ease;
+    }
+
+
+    .portal-btn:hover {
+      opacity: 0.9;
+    }
+
+
+    .center-box {
+      position: fixed;
+      top: 54%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 460px;
+      background-color: #ffffff;
+      border: 6px solid #2b4c63; 
+      box-sizing: border-box;
+      padding: 20px 24px 14px 24px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+    }
+
+
+    .group-members {
+      width: 82%;
+      padding: 8px 20px;
+      border-radius: 50px;
+      background-color: #2b4c63;
+      color: #ffffff;
+      font-family: 'Boldonse', sans-serif;
+      font-size: 22px;
+      text-align: center;
+      text-decoration: underline;
+      text-underline-offset: 4px;
+      text-decoration-thickness: 2px;
+      box-sizing: border-box;
+    }
+
+
+    .member-pill {
+      width: 100%;
+      background-color: #2b4c63;
+      color: #ffffff;
+      font-family: 'Solway', serif;
+      font-size: 18px;
+      padding: 9px 24px;
+      border-radius: 50px;
+      box-sizing: border-box;
+      display: flex;
+      align-items: center;
+    }
+
+
+    .member-name {
+      width: 38%;
+      text-align: right;
+      font-weight: 700;
+      padding-right: 16px;
+      box-sizing: border-box;
+    }
+
+
+    .member-role {
+      width: 62%;
+      text-align: center;
+      font-weight: 400;
+    }
+
+
+    .bottom-logo {
+      width: 68%;
+      max-width: 280px;
+      height: auto;
+      margin-top: 2px;
+    }
+  </style>
+</head>
+<body>
+     <header class="site-header">
+        <div class="logo-area">
+            <img src="https://findschools.ph/wp-content/uploads/2026/03/OBMCLOGO2024-04-1-848x566.webp" alt="OBMC Logo" class="logo-img" style="width: 120px; height: auto;">
+        </div>
+
+
+
+   <nav class="nav-menu">
+      <a href="index.html" class="active">Home</a>
+      <a href="page2.html">Courses</a>
+      <a href="page3.html">Enroll Now</a>
+      <a href="page4.html">Contact Us</a>
+      <a href="page5.html">About Us</a>
+    </nav>
+
+
+    <div class="portal-area">
+      <a href="#" class="portal-btn">MY PORTAL</a>
+    </div>
+  </header>
+
+
+  <div class="center-box">
+    <div class="group-members">Group Members</div>
+    
+    <div class="member-pill">
+      <span class="member-name">Miska -</span>
+      <span class="member-role">Main Page</span>
+    </div>
+    
+    <div class="member-pill">
+      <span class="member-name">Vinni -</span>
+      <span class="member-role">Course Offers</span>
+    </div>
+    
+    <div class="member-pill">
+      <span class="member-name">Bien -</span>
+      <span class="member-role">Enroll Now</span>
+    </div>
+    
+    <div class="member-pill">
+      <span class="member-name">Luis -</span>
+      <span class="member-role">Contact Info</span>
+    </div>
+    
+    <div class="member-pill">
+      <span class="member-name">Emman -</span>
+      <span class="member-role">About Us</span>
+    </div>
+
+
+    <img 
+      src="https://images.squarespace-cdn.com/content/v1/664c7ae50eea9c731b37e817/7c5f2399-faf0-4b55-abef-0d5a936d20c5/OBMC+-+60TH+LOGO+-+DIAMOND+SLOGAN+-+APPROVED+-+2026+FA_OBMC+-+COLOR+HORIZONTAL.png?format=1500w" 
+      alt="Operation Brotherhood Montessori Center 60th Logo" 
+      class="bottom-logo"
+    >
+  </div>
+
+
+</body>
+</html>

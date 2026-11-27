@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width='device-width', initial-scale=1.0">
+    <title>Courses Offered</title>
+</head>
+<body>
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Inquiry </title>  
+    <style>
+      
+        body {
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            font-weight: bold;
+            text-align: center;
+            color: rgb(87, 87, 183);
+        }
+        strong {
+              font-size: 18px;
+              text-align: center;
+              color: rgb(230, 168, 54);
+        }
+        p {
+            text-align:center;
+            font-size: 15px;
+        }
+    .site-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #ffffff;
+      padding: 15px 40px;
+      border-bottom: 8px solid #205068; 
+    }
+
+
+    .nav-menu {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 25px; 
+    }
+
+
+    .nav-menu a {
+      text-decoration: none;
+      color: #333333;
+      font-size: 14px;
+      font-weight: 500;
+      padding-bottom: 4px;
+    }
+
+
+    .nav-menu a.active {
+      border-bottom: 2px solid #205068;
+    }
+
+
+    .portal-btn {
+      display: inline-block;
+      background-color: #205068; 
+      color: #ffffff; 
+      text-decoration: none;
+      font-size: 12px;
+      font-weight: bold;
+      letter-spacing: 0.5px;
+      padding: 14px 28px;
+      border-radius: 50px; 
+      transition: opacity 0.2s ease;
+    }
+
+
+    .portal-btn:hover {
+      opacity: 0.9;
+    }
+      html, body {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            overflow-x: hidden;
+        }
+
+
+        .site-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #ffffff;
+            padding: 15px 40px;
+            border-bottom: 8px solid #205068;
+            position: relative;
+            z-index: 10;
+            box-sizing: border-box;
+            width: 100%;
+        }
+
+
+        .nav-menu {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 25px; 
+        }
+
+
+        .nav-menu a {
+            text-decoration: none;
+            color: #333333;
+            font-size: 14px;
+            font-weight: 500;
+            padding-bottom: 4px;
+        }
+
+
+        .nav-menu a.active {
+            border-bottom: 2px solid #205068;
+        }
+
+
+        .portal-btn {
+            display: inline-block;
+            background-color: #205068; 
+            color: #ffffff; 
+            text-decoration: none;
+            font-size: 12px;
+            font-weight: bold;
+            letter-spacing: 0.5px;
+            padding: 14px 28px;
+            border-radius: 50px; 
+            transition: opacity 0.2s ease;
+        }
+
+
+        .portal-btn:hover {
+            opacity: 0.9;
+        }
+
+
+        .hero-wrapper {
+            position: relative;
+            width: 100vw;
+            height: calc(100vh - 115px);
+            min-height: 550px;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            border-bottom: 8px solid #205068;
+        }
+
+
+        .hero-img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            margin: 0;
+            padding: 0;
+        }
+
+
+        .center-square {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 480px;
+            height: auto;
+            min-height: 180px;
+            background-color: rgba(255, 255, 255, 0.95);
+            border: 5px solid #205068;
+            padding: 30px 40px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+
+        .center-square strong {
+            font-size: 20px;
+            color: rgb(230, 168, 54);
+            display: block;
+            margin-bottom: 12px;
+        }
+
+
+        .center-square p {
+            font-size: 15px;
+            color: #333333;
+            line-height: 1.5;
+            margin: 0;
+        }
+
+         .portal-btn {
+      display: inline-block;
+      background-color: #205068; 
+      color: #ffffff; 
+      text-decoration: none;
+      font-size: 12px;
+      font-weight: bold;
+      letter-spacing: 0.5px;
+      padding: 14px 28px;
+      border-radius: 50px; 
+      transition: opacity 0.2s ease;
+    }
+
+
+    .portal-btn:hover {
+      opacity: 0.9;
+    }
+
+    .nav-menu a:hover { 
+      color: #205068; 
+    }
+    
+  .nav-menu a {
+  position: relative;
+  text-decoration: none;
+  color: #333333;
+  padding-bottom: 6px;
+}
+.nav-menu a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%; 
+  height: 2px;
+  background-color: #164e63; 
+  transition: width 0.3s ease; 
+}
+
+.nav-menu a:hover::after,
+.nav-menu a.active::after {
+  width: 100%;
+}
+ @media (max-width: 768px) {
+            .site-header {
+                flex-wrap: wrap;
+                gap: 15px;
+                padding: 15px 20px;
+            }
+
+            .nav-menu {
+                order: 3;
+                width: 100%;
+                flex-wrap: wrap;
+                gap: 12px 18px;
+            }
+        }
+  </style>
+</head>
+<body>
+
+
+    <header class="site-header">
+        <div class="logo-area">
+            <img src="https://findschools.ph/wp-content/uploads/2026/03/OBMCLOGO2024-04-1-848x566.webp" alt="OBMC Logo" class="logo-img" style="width: 120px; height: auto;">
+        </div>
+
+
+        <nav class="nav-menu">
+      <a href="index.html" class="active">Home</a>
+      <a href="page2.html">Courses</a>
+      <a href="page3.html">Enroll Now</a>
+      <a href="page4.html">Contact Us</a>
+      <a href="page5.html">About Us</a>
+    </nav>
+
+
+        <div class="portal-area">
+            <a href="#" class="portal-btn">MY PORTAL</a>
+        </div>
+    </header>
+
+
+    <div class="hero-wrapper">
+        <img src="https://images.squarespace-cdn.com/content/v1/664c7ae50eea9c731b37e817/8048edd1-98cc-42df-b46b-905a84cd33dc/CASA+PROGRAM+5+-+18+copy.jpg?format=2500w" class="hero-img" alt="Junior and Advanced Casa">
+        
+        <div class="center-square">
+            <strong>• Junior and Advanced Casa, ages 3-5</strong>
+            <p>Junior and Advanced Casa program for ages 3-5.</p>
+        </div>
+    </div>
+
+
+    <div class="hero-wrapper">
+        <img src="https://images.squarespace-cdn.com/content/v1/664c7ae50eea9c731b37e817/657faeff-12bc-4b51-8191-a96f7179912d/PRIMARY+PROGRAM+4+-+RAF07977.JPG?format=2500w" class="hero-img" alt="Primary Grade School">
+
+
+        <div class="center-square">
+            <strong>• Primary Grade School, ages 6-8</strong>
+            <p>Primary Grade School program for ages 6-8.</p>
+        </div>
+    </div>
+
+
+    <div class="hero-wrapper">
+        <img src="https://images.squarespace-cdn.com/content/v1/664c7ae50eea9c731b37e817/308f6785-a4ae-4970-a7ef-8a3236344bff/JAR_2646a.jpg?format=1500w" class="hero-img" alt="Intermediate Grade School">
+
+
+        <div class="center-square">
+            <strong>• Intermediate Grade School, ages 9-12</strong>
+            <p>Intermediate Grade School program for ages 9-12.</p>
+        </div>
+    </div>
+
+
+    <div class="hero-wrapper">
+        <img src="https://images.squarespace-cdn.com/content/v1/664c7ae50eea9c731b37e817/4069ea7e-83d6-4367-8825-71aa1ad6b88d/JUNIOR+HIGH+SCHOOL+PROGRAM+-+HERO+IMAGE+-+JAR_3329a.jpg?format=2500w" class="hero-img" alt="Junior High School">
+
+
+        <div class="center-square">
+            <strong>• Junior High School, ages 13-15</strong>
+            <p>Junior High School program for ages 13-15.</p>
+        </div>
+    </div>
+
+
+    <div class="hero-wrapper">
+        <img src="https://images.squarespace-cdn.com/content/v1/664c7ae50eea9c731b37e817/0bd933b3-baff-49ad-a136-becbc219422a/JAR_3796a.jpg?format=2500w" class="hero-img" alt="Senior High School">
+
+
+        <div class="center-square">
+            <strong>• Senior High School, ages 16-18</strong>
+            <p>Senior High School program for ages 16-18.</p>
+        </div>
+    </div>
+
+
+</body>
+</html>

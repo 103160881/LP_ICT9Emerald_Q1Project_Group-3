@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OBMC PORTAL</title>
+  <style>
+    body {
+      background-image: url(https://images.squarespace-cdn.com/content/v1/664c7ae50eea9c731b37e817/38df9671-1633-4828-b705-5972dadf6a57/OBMC+Quadrangle+2.jpg?format=1000w);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      min-height: 100vh;
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #fcfcfc;
+    }
+
+
+    .site-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #ffffff;
+      padding: 15px 40px;
+      border-bottom: 8px solid #205068; 
+    }
+
+
+    .nav-menu {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 25px; 
+    }
+
+
+    .nav-menu a {
+      text-decoration: none;
+      color: #333333;
+      font-size: 14px;
+      font-weight: 500;
+      padding-bottom: 4px;
+    }
+
+
+    .nav-menu a.active {
+      border-bottom: 2px solid #205068;
+    }
+
+
+    .portal-btn {
+      display: inline-block;
+      background-color: #205068; 
+      color: #ffffff; 
+      text-decoration: none;
+      font-size: 12px;
+      font-weight: bold;
+      letter-spacing: 0.5px;
+      padding: 14px 28px;
+      border-radius: 50px; 
+      transition: opacity 0.2s ease;
+    }
+
+
+    .portal-btn:hover {
+      opacity: 0.9;
+    }
+
+    .nav-menu a:hover { 
+      color: #205068; 
+    }
+    
+  .nav-menu a {
+  position: relative;
+  text-decoration: none;
+  color: #333333;
+  padding-bottom: 6px;
+}
+.nav-menu a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%; 
+  height: 2px;
+  background-color: #164e63; 
+  transition: width 0.3s ease; 
+}
+
+.nav-menu a:hover::after,
+.nav-menu a.active::after {
+  width: 100%;
+}
+ @media (max-width: 768px) {
+            .site-header {
+                flex-wrap: wrap;
+                gap: 15px;
+                padding: 15px 20px;
+            }
+
+            .nav-menu {
+                order: 3;
+                width: 100%;
+                flex-wrap: wrap;
+                gap: 12px 18px;
+            }
+        }
+      .hero-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 80vh;
+    }
+
+    .hero-textbox {
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 30px 40px;
+      border-radius: 12px;
+      text-align: center;
+      max-width: 600px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+    }
+
+    .hero-textbox h1 {
+      color: #205068;
+      margin-bottom: 10px;
+    }
+
+    .hero-textbox p {
+      color: #333333;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+
+   
+  <header class="site-header">
+    <div class="logo-area">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpF4ovJ0bEVhY39GUX1UTUw7FmEnIXoB-ksUHLMsDzLg&s=10" alt=" OBMCLogo" class="logo-img" style="width: 120px;height: auto;">
+    
+    </div>
+
+
+    <nav class="nav-menu">
+      <a href="index.html" class="active">Home</a>
+      <a href="page2.html">Courses</a>
+      <a href="page3.html">Enroll Now</a>
+      <a href="page4.html">Contact Us</a>
+      <a href="page5.html">About Us</a>
+    </nav>
+
+
+    <div class="portal-area">
+      <a href="#" class="portal-btn">MY PORTAL</a>
+    </div>
+  </header>
+   <div class="hero-section">
+    <div class="hero-textbox">
+      <h1>Welcome to O.B. Montessori Center</h1>
+      <p>We develop students to be self-reliant and responsible. Enroll Now!</p>
+    </div>
+  
